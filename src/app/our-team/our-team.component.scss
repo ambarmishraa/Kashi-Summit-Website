@@ -1,0 +1,210 @@
+section {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/ourTeam/bg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  h1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Montez", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 196.22px;
+    width: 100%;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      padding: 20px 0px;
+      width: 15%;
+    }
+  }
+
+  .middle {
+    .swiper {
+      display: flex;
+      .left-button {
+        width: 12%;
+        left: 20px;
+      }
+      .right-button {
+        width: 12%;
+        right: 20px;
+      }
+    }
+    .next-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      img {
+        width: 50%;
+      }
+    }
+    .list {
+      width: 76%;
+      display: flex;
+      justify-content: center;
+      .single-pt {
+        margin: 40px 50px;
+      }
+    }
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .detail {
+        width: 100%;
+        .detail-h1 {
+          font-family: "Original Surfer", cursive;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25.02px;
+          text-align: center;
+          color: #dee7fd;
+          height: auto;
+          word-wrap: break-word;
+          white-space: pre-line;
+          overflow-wrap: break-word;
+          padding: 10%;
+        }
+        .detail-h2 {
+          font-family: "Original Surfer", cursive;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20.02px;
+          text-align: center;
+          color: #dee7fd;
+          word-wrap: break-word;
+          white-space: pre-line;
+          overflow-wrap: break-word;
+          padding: 10%;        }
+      }
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      padding: 20px 0px;
+      width: 70%;
+      transform: translate(0px, 33%);
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  section {
+    .middle {
+      .swiper {
+        display: flex;
+        .left-button {
+          width: 20%;
+          left: 20px;
+        }
+        .right-button {
+          width: 20%;
+          right: 20px;
+        }
+      }
+      .next-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  section {
+    .heading {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      img {
+        padding: 20px 0px;
+        width: 50%;
+      }
+    }
+    .middle {
+      .swiper {
+        display: flex;
+        .left-button {
+          width: 20%;
+          left: 20px;
+        }
+        .right-button {
+          width: 20%;
+          right: 20px;
+        }
+      }
+      .next-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 70%;
+        }
+      }
+    }
+    .list {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      .single-pt {
+        margin: 40px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    .middle {
+      .swiper {
+        display: flex;
+        .left-button {
+          width: 20%;
+          left: 20px;
+        }
+        .right-button {
+          width: 20%;
+          right: 20px;
+        }
+      }
+      .next-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
