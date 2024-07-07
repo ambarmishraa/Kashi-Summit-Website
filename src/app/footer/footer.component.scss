@@ -5,9 +5,10 @@
 }
 
 .footer {
-  background-color: #1a1a2e;
+  background-image: url("img/footer-img.png");
   color: #fff;
-  padding: 20px 0;
+  // padding: 20px 0;
+
 }
 
 .logo {
@@ -44,6 +45,14 @@
   .contact {
     margin-left: 20vh;
   }
+}
+.footer-img {
+  text-align: center; /* This centers the image container */
+}
+
+.footer-img img {
+  width: 80%; /* Adjust the width as needed */
+  
 }
 
 .row {
