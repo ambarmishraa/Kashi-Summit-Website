@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener ,Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-hamara-kashi',
@@ -38,4 +38,36 @@ open(event: string) {
 onScroll(event: Event) {
   // this.reset()
 }
+constructor(private renderer: Renderer2,private el: ElementRef) {}
+
+@HostListener('window:scroll', [])
+
+  onWindowScroll() {
+    if(this.isInViewport()){
+      console.log(this.isInViewport())
+    const images = document.querySelectorAll('.banners img');
+    images.forEach((img: any) => {
+      this.renderer.removeClass(img, 'slide-top');
+
+      setTimeout(() => {
+        this.renderer.addClass(img, 'slide-top');
+      }, 100);
+      });
+    }
+  }
+
+  ngOnDestroy(): void {
+    window.removeEventListener('scroll', this.onWindowScroll);
+  }
+
+  isInViewport(): boolean {
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    
+    return (
+      rect.top >= 0 &&
+      rect.bottom <= (viewportHeight + scrollPosition)
+    );
+  }
 }
