@@ -1,0 +1,64 @@
+section {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/ourTeam/bg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  h1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Montez", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 196.22px;
+    width: 100%;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      padding: 20px 0px;
+      width: 15%;
+    }
+  }
+
+  .middle {
+    display: flex;
+    .list {
+      width: 70%;
+    }
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      .single-pt{
+        margin: 20px, 0px;
+      }
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      padding: 20px 0px;
+      width: 70%;
+      transform: translate(0px, 33%);
+    }
+  }
+}

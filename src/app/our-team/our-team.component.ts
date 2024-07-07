@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class OurTeamComponent {
 
+  ourTeam=[
+    'assets/ourTeam/pic1.svg','assets/ourTeam/pic2.svg','assets/ourTeam/pic1.svg','assets/ourTeam/pic2.svg','assets/ourTeam/pic1.svg','assets/ourTeam/pic2.svg'
+]
 }
