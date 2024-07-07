@@ -1,0 +1,34 @@
+
+.background-img {
+    position: relative; 
+  }
+  
+  .home-img {
+    width: 100%;
+    height: auto; 
+  }
+  
+  .wel-img {
+    position: absolute; 
+    top: 18%;
+    left: 58%; 
+    text-align: center; 
+  }
+  
+  .wel-text {
+    width: 100%; 
+    height: auto;
+    animation: comeForward 3s ease-in-out infinite;
+  }
+  
+  @keyframes comeForward {
+    0% {
+      opacity: 0;
+      transform: scale(0.9); 
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); 
+    }
+  }
+  

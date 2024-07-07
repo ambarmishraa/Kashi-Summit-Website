@@ -1,0 +1,155 @@
+.container {
+  background-image: url('krit-img/bg.png');
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.set1, .set2 {
+  margin-bottom: 10px;
+
+}
+
+.hand-image, .city-image {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.hand-image:hover, .city-image:hover {
+  transform: scale(1.15);
+}
+
+.set3 h1 {
+  font-family: 'Montez', cursive;
+  font-size: 6vw;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.set3 p {
+  font-family: 'Original Surfer', cursive;
+  font-size: 4vw;
+  font-weight: 400;
+  color: white;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+ 
+
+  .set1 {
+    display: flex;
+    flex-direction: column;
+     
+  }
+  .set1 img {
+    margin-top: 20%;
+    margin-left:20%;
+  }
+  .set2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .set2 img {
+    margin-top: 25vh;
+  }
+
+
+  .set3 {
+    max-width: 40%;
+    text-align: left;
+  }
+
+  .set3 h1 {
+    font-size: 60px;
+    text-align: center;
+    // margin-left: 0;
+  }
+
+  .set3 p {
+    margin-top: 7%;
+    font-size: 1.5vw;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hand-image, .city-image {
+    width: 70%;
+    height: auto;
+  }
+
+  .set3 h1 {
+    font-size: 100px;
+  }
+
+  .set3 p {
+    // margin-top: 30%;
+    font-size: 18px;
+    width: 60%;
+    margin-left: 15%;
+  }
+  /* Animation for p */
+@keyframes zoomInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-paragraph {
+  display: inline-block;
+  animation: zoomInFromTop 3s ease-in-out forwards infinite;
+}
+}
+
+/* Animation CSS */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-text {
+  display: inline-block;
+  position: relative; /* Ensure relative positioning */
+  // animation: moveRight 5s linear infinite;
+}
+
+// /* Updated Animation CSS */
+@keyframes moveRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+}
+

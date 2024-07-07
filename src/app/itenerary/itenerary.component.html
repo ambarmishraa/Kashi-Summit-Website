@@ -1,1 +1,11 @@
-<p>itenerary works!</p>
+<div class="divset">
+  <h1>Exciting events which you never want to miss</h1>
+  <div class="container">
+    <div class="card" *ngFor="let card of cards">
+      <img [src]="card.image" alt="Card image" />
+      <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </div>
+  </div>
+</div>
