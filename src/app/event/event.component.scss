@@ -1,0 +1,284 @@
+main {
+    width: 100%;
+    height: 1054px;
+    flex-shrink: 0;
+    background: #281617;
+  
+    #mobile-view {
+      display: none;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .spacer {
+        width: 150px;
+      }
+  
+      .title {
+        font-family: Montez;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: linear-gradient(
+          90deg,
+          #4911d6 2.4%,
+          #e33035 26.4%,
+          #ba1b2e 46.4%,
+          #411f96 72.4%,
+          #f50d13 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .cta {
+        width: 169.253px;
+        height: 110.484px;
+        flex-shrink: 0;
+        border-radius: 58.768px;
+        color: #f3f3f3;
+        font-family: "Original Surfer";
+        font-size: 37.612px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .what-btn {
+        background: #dc2c34 !important;
+      }
+  
+      .when-btn {
+        background: url("../../assets/itenary/6c31725d0228ef020b5dc30804d11315.jpeg")
+          lightgray 50% / cover no-repeat !important;
+      }
+  
+      .where-btn {
+        background: #f3f3f3 !important;
+        color: #0e0c11 !important;
+      }
+    }
+  
+    section {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80% !important;
+      margin: 70px auto;
+      gap: 20px;
+  
+      .first {
+        width: 485px;
+        height: 673px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        padding: 30px 60px;
+        position: relative;
+        background: url("../../assets/itenary/mannkarnika.png") lightgray 50% /
+          cover no-repeat;
+  
+        p {
+          color: #dee7fd;
+          font-family: "Original Surfer";
+          font-size: 18px;
+          font-style: normal;
+          padding: 0 18px;
+          font-weight: 400;
+          line-height: normal;
+          position: absolute;
+          left: 0px;
+          bottom: 0;
+          width: 100%;
+          flex-shrink: 0;
+          background: #281617;
+        }
+      }
+  
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 500px;
+  
+        .second {
+          // width: 750px;
+          height: 70%;
+          flex-shrink: 0;
+          border-radius: 50px;
+          padding: 60px 60px;
+          padding-top: 0px;
+          background: rgba(220, 44, 52, 0.7);
+          p {
+            color: #dee7fd;
+            font-family: "Original Surfer";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+          }
+        }
+  
+        .third {
+          width: 83%;
+          height: 30%;
+          flex-shrink: 0;
+          border-radius: 50px;
+          padding: 80px 60px;
+          padding-top: 0px;
+          background: url("../../assets/itenary/ghat.png") lightgray 0px -463.913px /
+            100% 799.519% no-repeat;
+  
+          p {
+            color: #dee7fd;
+            font-family: "Original Surfer";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    main {
+      width: 360px !important;
+      height: 1450px !important;
+    }
+  
+    #web-view {
+      display: none;
+    }
+  
+    #mobile-view {
+      display: flex !important;
+    }
+  
+    .navbar {
+      justify-content: space-evenly !important;
+      .title {
+        font-family: Montez;
+        font-size: 60px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: normal !important;
+        background: linear-gradient(
+          90deg,
+          #4911d6 2.4%,
+          #e33035 26.4%,
+          #ba1b2e 46.4%,
+          #411f96 72.4%,
+          #f50d13 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .flow {
+        width: fit-content !important;
+        height: 42.1px !important;
+        opacity: 0px;
+      }
+  
+      .cta {
+        width: 87.009px !important;
+        height: 56.798px !important;
+        flex-shrink: 0;
+        font-family: "Original Surfer";
+        font-size: 19.335px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      gap: 12px;
+  
+      .first {
+        width: 180px !important;
+        height: 418.903px !important;
+        flex-shrink: 0;
+        border-radius: 30px;
+        padding: 30px 60px;
+        position: relative;
+        background: url("../../assets/itenary/mannkarnika.png") lightgray 50% /
+          cover no-repeat;
+  
+        p {
+          color: #dee7fd;
+          font-family: "Original Surfer";
+          font-size: 12px !important;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 12px !important;
+          position: absolute;
+          left: 0px;
+          bottom: 0;
+          width: fit-content !important;
+          flex-shrink: 0;
+          background: #281617;
+        }
+      }
+  
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 100px;
+        height: 500px;
+  
+        .second {
+          // width: 750px;
+          height: 70%;
+          flex-shrink: 0;
+          border-radius: 30px;
+          padding: 10px 20px !important;
+          background: rgba(220, 44, 52, 0.7);
+          p {
+            color: #dee7fd;
+            font-family: "Original Surfer";
+            font-size: 12px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px !important;
+          }
+        }
+  
+        .third {
+          // width: 22px !important;
+          height: 210px !important;
+          flex-shrink: 0;
+          background: url("../../assets/itenary/ghat.png") lightgray 0px -463.913px /
+            100% 799.519% no-repeat;
+          flex-shrink: 0;
+          padding: 10px 20px !important;
+          border-radius: 30px;
+          p {
+            color: #dee7fd;
+            font-family: "Original Surfer";
+            font-size: 12px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px !important;
+          }
+        }
+      }
+    }
+  }
