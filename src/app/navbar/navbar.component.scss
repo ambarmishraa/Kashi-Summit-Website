@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-<<<<<<< HEAD
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -40,7 +40,6 @@ body {
 .navbar-link:hover {
     background-color: #575757;
     border-radius: 5px;
-=======
   font-family: "Montez", cursive;
   margin: 0;
   padding: 0;
@@ -80,21 +79,10 @@ body {
 .navbar-link:hover {
   background: linear-gradient(#dd4747 19%, #f2bc1e 100%);
   border-radius: 5px;
->>>>>>> 98538818fe51afc3f7aa4d0c5235dce2b61b6c15
 }
 
 /* Responsive Styles */
 .navbar-toggle {
-<<<<<<< HEAD
-    display: none;
-}
-
-.navbar-icon {
-    display: none;
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-=======
   display: none;
 }
 
@@ -103,45 +91,10 @@ body {
   font-size: 1.5em;
   color: white;
   cursor: pointer;
->>>>>>> 98538818fe51afc3f7aa4d0c5235dce2b61b6c15
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-<<<<<<< HEAD
-    .navbar-menu {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-item {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .navbar-link {
-        padding: 10px;
-        display: block;
-    }
-
-    .navbar-toggle:checked ~ .navbar-menu {
-        display: flex;
-    }
-
-    .navbar-icon {
-        display: block;
-    }
-}
-
-
-
-
-
-
-
-
-=======
   .navbar-menu {
     flex-direction: column;
     display: none;
@@ -171,4 +124,3 @@ body {
     display: block;
   }
 }
->>>>>>> 98538818fe51afc3f7aa4d0c5235dce2b61b6c15
