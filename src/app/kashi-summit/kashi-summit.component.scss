@@ -17,7 +17,7 @@
 
 .hand-image, .city-image {
   width: 80%;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   transition: transform 0.3s;
 }
@@ -58,16 +58,17 @@
      
   }
   .set1 img {
-    margin-top: 20%;
-    margin-left:20%;
+    margin-top: 15vh;
+    margin-left:30%;
   }
   .set2 {
     display: flex;
     flex-direction: column;
+    margin-right: 20%;
   }
 
   .set2 img {
-    margin-top: 25vh;
+    margin-top: 32vh;
   }
 
 
