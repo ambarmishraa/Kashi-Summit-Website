@@ -70,4 +70,6 @@ constructor(private renderer: Renderer2,private el: ElementRef) {}
       rect.bottom <= (viewportHeight + scrollPosition)
     );
   }
+
+  
 }
