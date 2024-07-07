@@ -1,35 +1,32 @@
 /* General Styles */
 body {
-  font-family: "Montez";
+  font-family: "Montez", cursive;
   margin: 0;
   padding: 0;
 }
 
 .navbar {
-  margin-top: 40px;
+  margin-top: 17px;
   justify-content: space-around;
   display: flex;
   align-items: center;
   background-color: transparent;
-  
 }
+
 
 .navbar-menu {
   font-family: "Original Surfer", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
-  width: auto;
+  font-size: 20px;
   list-style: none;
   display: flex;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 80px;
+  margin-left: auto; /* Adjusted margin for responsiveness */
 }
 
 .navbar-item {
   margin-left: 20px;
-  margin-right: 40px;
+  margin-right: 15px; /* Adjusted margin for spacing */
 }
 
 .navbar-link {
@@ -54,4 +51,36 @@ body {
   font-size: 1.5em;
   color: white;
   cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 100%; /* Ensure dropdown is below the navbar */
+    width: 100%;
+    background-color: #fff; /* Background color for mobile menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for mobile menu */
+  }
+
+  .navbar-item {
+    margin: 0; /* Remove margin for mobile */
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 15px; /* Increased padding for better touch area */
+    display: block;
+    color: black; /* Text color for mobile menu */
+  }
+
+  .navbar-toggle:checked + .navbar-icon + .navbar-menu {
+    display: flex; /* Show menu when toggle is checked */
+  }
+
+  .navbar-icon {
+    display: block;
+  }
 }
