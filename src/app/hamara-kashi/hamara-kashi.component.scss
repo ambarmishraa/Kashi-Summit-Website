@@ -1,18 +1,20 @@
 section {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-image: url("../../assets/hamaraKashi/gangabg.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
   h1 {
+    padding-top: 0px;
+    margin-top: 0px;
     text-align: center;
     font-family: "Montez", cursive;
     font-weight: 400;
     font-size: 60px;
     line-height: 196.22px;
-    width: 100vw;
+    width: 100%;
   }
 
   .banners {

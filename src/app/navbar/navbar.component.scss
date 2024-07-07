@@ -1,45 +1,5 @@
 /* General Styles */
 body {
-
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-}
-
-.navbar-brand {
-   
-   width:20%;
-   height:20%;
-}
-
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-item {
-    margin-left: 20px;
-}
-
-.navbar-link {
-    text-decoration: none;
-    color: red;
-    padding: 8px 15px;
-    transition: background 0.3s;
-}
-
-.navbar-link:hover {
-    background-color: #575757;
-    border-radius: 5px;
   font-family: "Montez", cursive;
   margin: 0;
   padding: 0;
@@ -95,32 +55,35 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .navbar-menu {
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    top: 100%; /* Ensure dropdown is below the navbar */
-    width: 100%;
-    background-color: #fff; /* Background color for mobile menu */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for mobile menu */
-  }
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
 
-  .navbar-item {
-    margin: 0; /* Remove margin for mobile */
-    text-align: center;
-  }
+    .navbar-item {
+        margin-left: 0;
+        text-align: center;
+    }
 
-  .navbar-link {
-    padding: 15px; /* Increased padding for better touch area */
-    display: block;
-    color: black; /* Text color for mobile menu */
-  }
+    .navbar-link {
+        padding: 10px;
+        display: block;
+    }
 
-  .navbar-toggle:checked + .navbar-icon + .navbar-menu {
-    display: flex; /* Show menu when toggle is checked */
-  }
+    .navbar-toggle:checked ~ .navbar-menu {
+        display: flex;
+    }
 
-  .navbar-icon {
-    display: block;
-  }
+    .navbar-icon {
+        display: block;
+    }
 }
+
+
+
+
+
+
+
+
